@@ -9,6 +9,8 @@ function draw(){
     showCar();
     moveCar();
     moveActor();
+    returnStartingPositionCar();
+    checkCollision();
 
 }
 
