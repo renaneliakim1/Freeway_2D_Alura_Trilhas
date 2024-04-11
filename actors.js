@@ -17,7 +17,9 @@ function moveActor() {
   }
 
   if (keyIsDown(DOWN_ARROW)) {
-    yActor += 4;
+    if(actorMovementLimit()){
+      yActor += 4;
+    }
   }
 }
 
@@ -34,6 +36,9 @@ function checkCollision(){
     );
     if (collide) {
         returnActorStartingPosition();
+        if(pointsGreaterThanZero()){
+        myPoints -= 1;
+        }
     }
   }
 }
@@ -57,4 +62,14 @@ function scoreBoard(){
     returnActorStartingPosition()
   }
 };
+
+function pointsGreaterThanZero(){
+  return myPoints > 0;
+}
+
+
+
+function actorMovementLimit(){
+  return yActor < 366; 
+}
 
