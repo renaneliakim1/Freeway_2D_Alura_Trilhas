@@ -21,6 +21,24 @@ function moveActor() {
       yActor += 4;
     }
   }
+
+  if (keyIsDown(LEFT_ARROW)) {
+    if(actorMovementLimit()){
+      xActor -= 4;
+    }
+  }
+
+
+  if (keyIsDown(RIGHT_ARROW)) {
+    if(actorMovementLimit()){
+      xActor += 4;
+    }
+  }
+
+
+
+
+
 }
 
 function checkCollision(){
@@ -74,4 +92,6 @@ function pointsGreaterThanZero(){
 function actorMovementLimit(){
   return yActor < 366; 
 }
+
+
 
