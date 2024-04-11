@@ -7,42 +7,48 @@ html, body {
     justify-content: center;
     align-items: center;
     height: 100%;
-  }
+}
 
 
-  canvas {
+canvas {
     display: flex;
-  }
+}
 
 
-  /* p {
+/* p {
     position: absolute;
     bottom: 0;
   } */
 
 
-  footer {
+footer {
     text-align: center;
     margin-top: 12rem;
-/*     margin-bottom: 3rem;
- */}
+    /*     margin-bottom: 3rem;
+ */
+}
+
 .redes {
     display: inline;
     font-size: 16px;
     font-weight: bold;
     color: white;
 }
+
 .redes * {
     vertical-align: middle;
 }
+
 .redes p {
     margin-bottom: 15px;
 }
+
 .redes a {
     margin: 5px 15px;
     text-decoration: none;
     color: white;
 }
+
 .redes a:hover {
     transition: 0.5s;
     opacity: 70%;
@@ -58,19 +64,62 @@ html, body {
     margin-top: 15px;
 }
 
-.redes p   {
+.redes p {
     color: black;
 }
 
-.redes a   {
+.redes a {
     color: black;
 }
 
-footer{
+footer {
     font-family: 'Ubuntu', sans-serif;
 
 }
 
-.credito{
+.credito {
     color: black;
+}
+
+@media(max-width: 610px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        background-color: rgb(224, 220, 220);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    main {
+        box-sizing: border-box;
+
+    }
+    canvas {
+        display: flex;
+
+    }
+    footer {
+        text-align: center;
+        margin-top: 5rem;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .redes {
+        display: inline;
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .redes a:hover {
+        transition: 0.5s;
+        opacity: 70%;
+        color: #0a3871;
+    }
+    img {
+        width: 30px;
+        height: 30px;
+    }
 }
