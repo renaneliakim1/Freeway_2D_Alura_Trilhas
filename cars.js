@@ -1,6 +1,6 @@
 let xCars = [600, 600, 600, 600, 600, 600];
 let yCars = [40, 96, 150, 210, 270, 318];
-let speedCars = [2, 2, 2, 4, 5, 4];
+let speedCars = [11, 7.2, 7.8, 8, 7.5, 6.3];
 let carLength = 50;
 let carHeight = 40;
 
@@ -28,6 +28,3 @@ function returnStartingPositionCar() {
 function wentOverboard(xCars){
     return xCars < -50;
 }
-
-/* 12, 9.2, 9.8, 14, 9.5, 8
- */
