@@ -1,6 +1,6 @@
-let xCars = [600, 600, 600];
-let yCars = [40, 96, 150];
-let speedCars = [4, 3.5, 6.2];
+let xCars = [600, 600, 600, 600, 600, 600];
+let yCars = [40, 96, 150, 210, 270, 318];
+let speedCars = [12, 9.5, 7.2, 7, 12.5, 10];
 let carLength = 50;
 let carHeight = 40;
 
@@ -11,13 +11,13 @@ function showCar() {
 }
 
 function moveCar() {
-  for (let i = 0; i < imageCars.length; i = i + 1) {
+  for (let i = 0; i < imageCars.length; i++ ) {
     xCars[i] -= speedCars[i];
   }
 }
 
 function returnStartingPositionCar() {
-  for (let i = 0; i < imageCars.length; i = i + 1) {
+  for (let i = 0; i < imageCars.length; i++) {
     if (wentOverboard(xCars[i])) {
       xCars[i] = 600;
     }
@@ -28,3 +28,5 @@ function returnStartingPositionCar() {
 function wentOverboard(xCars){
     return xCars < -50;
 }
+
+

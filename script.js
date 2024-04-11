@@ -11,6 +11,9 @@ function draw(){
     moveActor();
     returnStartingPositionCar();
     checkCollision();
+
+    displayPoints();
+    scoreBoard();
 }
 
 
@@ -22,4 +25,6 @@ function showCar (){
 function moveCar(){
     xCar -= 2;
 }
+
+
 
