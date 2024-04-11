@@ -36,6 +36,7 @@ function checkCollision(){
     );
     if (collide) {
         returnActorStartingPosition();
+        collisionSound.play();
         if(pointsGreaterThanZero()){
         myPoints -= 1;
         }
@@ -59,6 +60,7 @@ function displayPoints(){
 function scoreBoard(){
   if(yActor < 15){
     myPoints += 1;
+    dotSound.play();
     returnActorStartingPosition()
   }
 };

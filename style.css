@@ -1,8 +1,75 @@
 html, body {
     margin: 0;
     padding: 0;
+    display: flex;
+    background-color: rgb(224, 220, 220);
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
+
+
   canvas {
-    display: block;
+    display: flex;
   }
-  
+
+
+  /* p {
+    position: absolute;
+    bottom: 0;
+  } */
+
+
+  footer {
+    text-align: center;
+    margin-top: 9rem;
+    margin-bottom: 3rem;
+}
+.redes {
+    display: inline;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+.redes * {
+    vertical-align: middle;
+}
+.redes p {
+    margin-bottom: 15px;
+}
+.redes a {
+    margin: 5px 15px;
+    text-decoration: none;
+    color: white;
+}
+.redes a:hover {
+    transition: 0.5s;
+    opacity: 70%;
+    color: #0a3871;
+}
+
+
+
+.credito {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin-top: 15px;
+}
+
+.redes p   {
+    color: black;
+}
+
+.redes a   {
+    color: black;
+}
+
+footer{
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.credito{
+    color: black;
+}

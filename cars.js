@@ -1,6 +1,6 @@
 let xCars = [600, 600, 600, 600, 600, 600];
 let yCars = [40, 96, 150, 210, 270, 318];
-let speedCars = [12, 9.5, 7.2, 7, 12.5, 10];
+let speedCars = [12, 9.2, 9.8, 14, 9.5, 8];
 let carLength = 50;
 let carHeight = 40;
 

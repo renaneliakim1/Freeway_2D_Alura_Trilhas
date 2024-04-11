@@ -1,6 +1,7 @@
 
 function setup(){
     createCanvas(500, 400);
+    trackSound.loop();
 }
 
 function draw(){
